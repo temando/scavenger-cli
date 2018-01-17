@@ -1,0 +1,69 @@
+{
+  "name": "scavenger-cli",
+  "version": "0.0.1",
+  "author": "Temando Pty Ltd",
+  "contributors": [
+    "Brendan Abbott <brendan.abbott@temando.com>",
+    "Evan Read <evan.read@temando.com>",
+    "Khoa Tran <khoa.tran@temando.com>",
+    "Jason Wijegooneratne <jason.wijegooneratne@temando.com>"
+  ],
+  "preferGlobal": true,
+  "description": "A library and CLI tool for cloning and extracting resources from git servers en masse.",
+  "license": "MIT",
+  "keywords": [
+    "dx"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/temando/scavenger-cli.git"
+  },
+  "engines": {
+    "node": ">=6.1.0",
+    "npm": "^3.8.2"
+  },
+  "dependencies": {
+    "ajv": "^6.0.0",
+    "bluebird": "^3.5.0",
+    "commander": "^2.9.0",
+    "fs-extra": "^5.0.0",
+    "get-stdin": "^5.0.1",
+    "globby": "^7.1.1",
+    "is-array-of": "^1.0.4",
+    "simple-git": "^1.85.0",
+    "tmp-promise": "^1.0.4",
+    "tslib": "^1.8.1",
+    "winston": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^5.0.0",
+    "@types/jest": "^22.0.1",
+    "@types/node": "^9.3.0",
+    "@types/winston": "^2.3.7",
+    "changelog-verify": "^1.1.0",
+    "jest": "^22.1.1",
+    "ts-jest": "^22.0.1",
+    "tslint": "^5.9.1",
+    "tslint-config-temando": "^1.5.11",
+    "typedoc": "^0.9.0",
+    "typescript": "^2.6.2",
+    "version-changelog": "^2.1.0"
+  },
+  "scripts": {
+    "build": "rm -Rf dist && tsc",
+    "build:docs": "typedoc --out ./dist/docs --target es6 --readme README.md --exclude '**/*.test.ts' src/*.ts",
+    "build:watch": "tsc --watch",
+    "lint": "tslint -p tsconfig.json -c tslint.json",
+    "preversion": "npm run build && npm run lint && npm run test",
+    "test": "jest",
+    "version": "version-changelog CHANGELOG.md && changelog-verify CHANGELOG.md && git add CHANGELOG.md"
+  },
+  "bin": {
+    "scavenger": "dist/cli/scavenger.js"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "data"
+  ]
+}

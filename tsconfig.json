@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "declaration": true,
+    "pretty": true,
+    "importHelpers": true,
+    "allowSyntheticDefaultImports": false,
+    "noUnusedLocals": true,
+    "lib": [
+      "dom",
+      "es2015"
+    ]
+  },
+  "exclude": [
+    "src/**/*test.ts",
+    "dist",
+    "node_modules"
+  ],
+  "include": [
+    "src/**/*"
+  ]
+}

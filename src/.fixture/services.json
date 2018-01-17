@@ -1,0 +1,23 @@
+[
+  {
+    "id": "remark-graphviz",
+    "name": "remark-graphviz",
+    "repositoryUrl": "https://github.com/temando/remark-graphviz.git",
+    "commitIsh": "master"
+  },
+  {
+    "id": "remark-gitlab-artifact",
+    "name": "remark-gitlab-artifact",
+    "repositoryUrl": "https://github.com/temando/remark-gitlab-artifact.git"
+  },
+  {
+    "id": "remark-openapi",
+    "name": "remark-openapi",
+    "repositoryUrl": "https://github.com/temando/remark-openapi.git"
+  },
+  {
+    "id": "remark-metadata",
+    "name": "remark-metadata",
+    "repositoryUrl": "https://github.com/temando/remark-metadata.git"
+  }
+]
