@@ -11,7 +11,7 @@ Scavenger aggregates documentation from project repositories and prepares it for
 Install Scavenger globally for ease of use. To install Scavenger, run the following command:
 
 ```sh
-$ npm install -g scavenger
+$ npm install -g scavenger-cli
 ```
 
 ## Using Scavenger

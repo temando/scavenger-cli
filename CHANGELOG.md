@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ## [Unreleased][]
 
+### Fixed
+
+- Fix critical error in the README.
+
 ## [0.1.0][] - 2018-01-17
 
 Scavenger is open sourced after a year of internal use by Temando's Developer Experience team.
