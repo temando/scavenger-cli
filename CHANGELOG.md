@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ## [Unreleased][]
 
+## [0.1.1][] - 2018-01-18
+
 ### Fixed
 
 - Fix critical error in the README.
@@ -15,5 +17,6 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 Scavenger is open sourced after a year of internal use by Temando's Developer Experience team.
 
 
-[Unreleased]: https://github.com/temando/scavenger-cli/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/temando/scavenger-cli/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/temando/scavenger-cli/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/temando/scavenger-cli/tree/v0.1.0
